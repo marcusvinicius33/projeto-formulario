@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style> 
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <h1>Meu Formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="get">
+     <!-- Para mandar os dados do formúlario, envia usando o "action", usando alguma linguagem de programação, nesse exemplo foi usado o php, mas é possivel usar o javastrip ou outra linguagem.-->
+
+    <!-- Autocomplete="off": Indica se os elementos de entrada podem por padrão ter seus valores preenchidos automaticamente pelo navegador. Essa configuração pode ser substituída por um atributo de preenchimento automático em um elemento pertencente ao formulário. Os valores possíveis são: 
+        off: o usuário deve inserir explicitamente um valor em cada campo para cada uso, ou o documento fornecerá seu próprio método de preenchimento automático; o navegador não completa as entradas automaticamente.
+        
+        on: ativado, o navegador pode completar valores automaticamente com base nos valores que o usuário inseriu anteriormente no formulário.-->
+    
+    <!-- Existem dois métodos "method" para envio de formulário mais usados:
+        GET: Por padrão ele é método GET.get: Corresponde ao método HTTP GET; os dados do formulário são anexados ao URI do atributo de ação com um '?' como separador, e o URI resultante é enviado ao servidor. Use este método quando o formulário não tiver efeitos colaterais e contiver apenas caracteres ASCII.
+        
+        POST: Corresponde ao método HTTP POST; os dados do formulário são incluídos no corpo do formulário e enviados ao servidor. Ideal para dados mais sensíveis, como senha ou número de cartão de crédito. -->
+
+        <p> <label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p> <!--Ligando o "label" ao texto: Para relacionar a informação que vem antes com o "input", acrescenta, ao "Nome", caso desse exemplo, o "label". O primeiro elemento no documento com um "id" correspondente ao valor do atributo "for" é o controle rotulado para este elemento de rótulo, se for um elemento rotulável. Se não for rotulável, o atributo "for" não terá efeito. Caso existam outros elementos que também correspondam ao valor do id, posteriormente no documento, eles não serão considerados.
+
+        Nota: Um elemento <label> pode ter um atributo "for" e um elemento de controle contido, desde que o atributo "for" aponte para o elemento de controle contido.-->
+        
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+        
+    </form>
+</body>
+</html>
