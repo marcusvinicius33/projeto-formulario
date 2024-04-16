@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Segundo Teste de Formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="40" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required>
+        </p>
+        <!--OBS. Com o "input" tipo "number" número,é possível adicionar outros atributos como o "min" que representa o número mínimo que pode ser digitado; o "max" que representa o número máximo a ser digitado. Também o "step" que acrescenta a variação fracionada do número.-->
+        <p>
+            <label for="imes">Período Letivo:</label>
+            <input type="month" name="mes" id="imes" value="2024-05">
+        </p>
+        <!--OBS. Com o "input" tipo "month" mês, é possível acrescentar o mês e ano, e usando a atribuição "value" é possível acrescentar ao input um mês e ano especifico, que poderar ser alterado manualmente.-->
+        <p>
+            <label for="idia">Dia da Prova:</label>
+            <input type="date" name="dia" id="idia" value="2024-06-24">
+        </p>
+        <!--OBS. Com o "input" tipo "date" data, é possível acrescentar a data, o mês e ano. E usando o atributo "value" é possível acrescentar ao input uma data, o mês e ano especifico, que poderar ser alterado manualmente.-->
+        <p>
+            <label for="ihora">Hora da Prova:</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <!--OBS. Com o "input" tipo "time" hora, é possível acrescentar a hora e minutos.-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+    
+</body>
+</html>
