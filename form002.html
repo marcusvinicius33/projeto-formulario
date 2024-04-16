@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 002</title>
+</head>
+<body>
+    <h1> Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+             <!--Com o "autocomplete" é possível deixar off ou on a opção para o preenchimento automático. Quando aplicada ao formulário ela só possibilita essas duas opções, mas no "input" ela sugere outras opções, como no exemplo abaixo.-->
+        <p>
+            <label for="iusuario">Usuário:</label>
+            <input type="text" name="usuario" id="iusuario" required minlength="6" maxlength="15" size="20" placeholder="Nome do usuário" autocomplete="username">
+        </p>
+            <!-- OBSERVAÇÕES: Sempre que um campo do formulário  for obrigatório é preciso colocar o atributo "required", que significa requerido, ou obrigatório, assim as informações só serão enviadas ao ser preenchido.
+            
+            Outros atributos são o "minlength", comprimento mínimo, e o "maxlength", comprimento máximo, esses atributos dizem a quantidade mínima e máxima que as informações preenchidas, os caracteres, devem ter.
+        
+            Com o atributo "size" é possível definir o tamanho para a caixa do input.
+        
+            O "placeholder", indica o que deve ser escrito na caixa do input.-->
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required maxlength="8" autocomplete="current-password"> <!--Input do tipo senha-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <!--Input do tipo enviar-->
+            <input type="reset" value="Limpar">
+            <!--Input do tipo limpar-->
+        </p>
+    </form>
+    
+    
+   
+    
+</body>
+</html>
