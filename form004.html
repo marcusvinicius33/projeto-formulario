@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+
+            <input type="checkbox" name="esfut" id="iesfut" checked>
+            <label for="iesfut"> Futebol</label><br>   
+            <input type="checkbox" name="esbas" id="iesbas">
+            <label for="iesbas"> Basquete</label><br>
+            <input type="checkbox" name="esnat" id="iesnat">
+            <label for="iesnat"> Natação</label><br>
+            <input type="checkbox" name="esvol" id="iesvol">
+            <label for="iesvol"> Vôlei</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend> Sexo </legend>
+
+            <input type="radio" name="sexo" id="isxmas" value="M">
+            <label for="isxmas"> Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem" value="F" checked>
+            <label for="isxfem">Feminino</label>
+            <!--No input "radio" só é possível escolher uma das opções, e o "name" deve ser o mesmo para todos os input, caso contrário ele vai marcar todos e não vai conseguir desmarcar. E necessário um "value" indicando, no caso do exemplo, se é Masculino ou Feminino. E também, colocando o "checked" dentro do input, a opção já fica automaticamente marcada, podendo ser alterada com o click.-->
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+    
+</body>
+</html>
