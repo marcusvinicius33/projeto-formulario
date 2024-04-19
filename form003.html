@@ -42,8 +42,31 @@
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+    </form>
 
+    <h2>Novo teste de Formulário.</h2>
+    
+    <form action="cadastro.php" method="get" autocomplete="on">
 
+        <fieldset> <!-- O elemento "fieldset"(GRUPO DE CAMPOS) representa um conjunto de controles de formulário agrupados opcionalmente sob um nome comum.-->
+            <legend>Dados pessoais</legend> <!--O elemento "legend"(LEGENDA) representa uma legenda para o restante do conteúdo do elemento fieldset pai do elemento legend, se houver.-->
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^[0-9]{4}-[0-9]{4}$"> <!-- "pattern": Estudar mais sobre RegEx, Expressões Regulares-->
+            </p> 
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
     
 </body>
