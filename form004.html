@@ -19,8 +19,9 @@
             <label for="iesbas"> Basquete</label><br>
             <input type="checkbox" name="esnat" id="iesnat">
             <label for="iesnat"> Natação</label><br>
-            <input type="checkbox" name="esvol" id="iesvol">
+            <input type="checkbox" name="esvol" id="iesvol" checked>
             <label for="iesvol"> Vôlei</label>
+            <!--Com o input "checkbox", é possível marcar todas as opcões. com o atributo "checked" é possível já deixar alguma opção marcada, podendo marcar mais de uma opção.-->
         </fieldset>
         <br>
         <fieldset>
@@ -30,7 +31,7 @@
             <label for="isxmas"> Masculino</label><br>
             <input type="radio" name="sexo" id="isxfem" value="F" checked>
             <label for="isxfem">Feminino</label>
-            <!--No input "radio" só é possível escolher uma das opções, e o "name" deve ser o mesmo para todos os input, caso contrário ele vai marcar todos e não vai conseguir desmarcar. E necessário um "value" indicando, no caso do exemplo, se é Masculino ou Feminino. E também, colocando o "checked" dentro do input, a opção já fica automaticamente marcada, podendo ser alterada com o click.-->
+            <!--No input "radio" só é possível escolher uma das opções, e o "name" deve ser o mesmo para todos os input, caso contrário ele vai marcar todos e não vai conseguir desmarcar. É necessário um "value" indicando, no caso do exemplo, se é Masculino ou Feminino. E também, colocando o "checked" dentro do input, a opção já fica automaticamente marcada, podendo ser alterada com o click, nesse caso só é possível marcar uma das ooções.-->
         </fieldset>
         <p>
             <input type="submit" value="Enviar">
