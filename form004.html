@@ -31,14 +31,34 @@
             <label for="isxmas"> Masculino</label><br>
             <input type="radio" name="sexo" id="isxfem" value="F" checked>
             <label for="isxfem">Feminino</label>
-            <!--No input "radio" só é possível escolher uma das opções, e o "name" deve ser o mesmo para todos os input, caso contrário ele vai marcar todos e não vai conseguir desmarcar. É necessário um "value" indicando, no caso do exemplo, se é Masculino ou Feminino. E também, colocando o "checked" dentro do input, a opção já fica automaticamente marcada, podendo ser alterada com o click, nesse caso só é possível marcar uma das ooções.-->
+            <!--No input "radio" só é possível escolher uma das opções, e o "name" deve ser o mesmo para todos os input, caso contrário ele vai marcar todos e não vai conseguir desmarcar. É necessário um "value" indicando, no caso do exemplo, se é Masculino ou Feminino. E também, colocando o "checked" dentro do input, a opção já fica automaticamente marcada, podendo ser alterada com o click, nesse caso só é possível marcar uma das opções.-->
         </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+    </form>
+    <br>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p> 
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="00ffdd">
+        </p> <!-- Adicionando o "value" ao input "color" é possível adicionar uma determinada cor.-->
 
+        <p>
+            <label for="inivel">Nível de Satisfação:</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+        </p> <!-- Adicionando o "min" e "max" é possível configurar o valor mínimo e máximo do"range", por padrão o valor mínimo é 0 e máximo é 100, porém é possível configurar outros valores, no caso do exemplo acima foi configurado de 1 até 5. E acrescentando o "value" é possível escolher o valor inicial que aparecerá marcado.-->
 
+        <p>
+            <label for="ifoto"> Foto do perfil:</label>
+            <input type="file" name="foto" id="ifoto">
+        </p> <!--Com o input "file" é possível escolher uma foto do arquivo. o input "image" é o editor do site que escolhe a imagem. Obs: sempre que for mandar um arquivo o "method" tem que ser "post".-->
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
     
 </body>
